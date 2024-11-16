@@ -1,9 +1,5 @@
 const modal = document.getElementById("myModal");
-
-// Get the input field that opens the modal
 const inputField = document.getElementById("myInput");
-
-// Get the <span> element that closes the modal
 const closeModal = document.getElementById("closeModal");
 const searchLocation = document.querySelector(".search_input");
 
@@ -12,34 +8,29 @@ searchLocation.addEventListener("input", (e) => {
 });
 
 function openModal() {
-    modal.style.display = "flex"; // Show modal
+    modal.style.display = "flex"; 
     setTimeout(() => {
-        modal.classList.add("show"); // Add class to show modal
-        document.body.classList.add("modal-open"); // Add class to body
-        // Show modal content
+        modal.classList.add("show"); 
+        document.body.classList.add("modal-open"); 
         const modalContent = modal.querySelector(".modal-content");
         modalContent.classList.add("show");
-    }, 0); // Trigger the CSS transition after setting display
+    }, 0); 
 }
 
-// Function to close the modal
 function closeModalFunction() {
     const modalContent = modal.querySelector(".modal-content");
-    modalContent.classList.remove("show"); // Remove class to hide modal content
-    modal.classList.remove("show"); // Remove class to hide modal
+    modalContent.classList.remove("show"); 
+    modal.classList.remove("show"); 
     setTimeout(() => {
-        modal.style.display = "none"; // Hide the modal after the transition
-        document.body.classList.remove("modal-open"); // Remove class from body
-    }, 300); // Match the duration of the transition
+        modal.style.display = "none"; 
+        document.body.classList.remove("modal-open"); 
+    }, 300); 
 }
 
-// When the user clicks on the input field, open the modal
 inputField.addEventListener("click", openModal);
 
-// When the user clicks on <span> (x), close the modal
 closeModal.addEventListener("click", closeModalFunction);
 
-// When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function (event) {
     if (event.target === modal) {
         closeModalFunction();

@@ -1,18 +1,4 @@
-/*------------------------------------*\
-   Plugins - Table of contents
-\*------------------------------------*/
-/*
- - anime.js
- - Jarallax
- - Chocolat-1.0.4
- - jQuery Easing v1.3
-*/
 
-/*
- anime.js
- 2017 Julian Garnier
- Released under the MIT license
-*/
 var $jscomp$this = this;
 (function (v, p) {
     "function" === typeof define && define.amd
@@ -704,11 +690,6 @@ var $jscomp$this = this;
     return n;
 });
 
-/*!
- * Jarallax v2.0.2 (https://github.com/nk-o/jarallax)
- * Copyright 2022 nK <https://nkdev.info>
- * Licensed under MIT (https://github.com/nk-o/jarallax/blob/master/LICENSE)
- */
 !(function (e, t) {
     "object" == typeof exports && "undefined" != typeof module
         ? (module.exports = t())
@@ -1708,16 +1689,6 @@ var $jscomp$this = this;
     };
 })();
 
-//--------------------------------
-// - jQuery Easing
-//--------------------------------
-/*
- * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
- *
- * Copyright Â© 2008 George McGinley Smith
- * All rights reserved.
- *
- */
 jQuery.easing.jswing = jQuery.easing.swing;
 jQuery.extend(jQuery.easing, {
     def: "easeOutQuad",
