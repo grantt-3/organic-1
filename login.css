@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+form{
+    justify-content: start;
+}
+
+p{
+    color: red;
+}
